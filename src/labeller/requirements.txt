@@ -1,0 +1,17 @@
+datasketch>=1.6.5
+nltk>=3.9.1
+numpy>=2.0.0
+pandas>=3.0.1
+psutil>=6.0.0
+python-dateutil>=2.9.0
+loguru>=0.7.0
+PyYAML>=6.0.2
+scikit-learn>=1.5.0
+tqdm>=4.67.0
+gspread>=6.0.0
+oauth2client>=4.1.3
+slack-sdk>=3.34.0
+
+# Local package — install from:
+# G:\Shared drives\Data\Analysis\General Methods\dist\general_methods-0.0.3-py3-none-any.whl
+# pip install "G:\Shared drives\Data\Analysis\General Methods\dist\general_methods-0.0.3-py3-none-any.whl"

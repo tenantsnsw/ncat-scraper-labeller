@@ -1,0 +1,12 @@
+# Path to the shared NCAT data directory.
+# Leave blank to use the default: G:\Shared drives\Data\NCAT Scraper\
+base_data_dir: ""
+
+# Slack webhook URL for pipeline notifications (WARNING: SECRET)
+slack_webhook_url: ""
+
+# Slack bot token for log file uploads (WARNING: SECRET)
+slack_bot_token: ""
+
+# Slack channel ID to post log files to (e.g. "C01234567")
+slack_channel: ""

@@ -1,0 +1,35 @@
+pattern,replacement
+ & , and
+ co , company
+ co$, company
+ co. , company
+ co.$, company
+ inc , incorporated
+ inc$, incorporated
+ inc.$, incorporated
+ inc. , incorporated
+ co.ltd$, company limited
+ pty ltd , proprietary limited
+ pty ltd$, proprietary limited
+ ptyltd$, proprietary limited
+pty.ltd$,proprietary limited
+ pl , proprietary limited
+ p/l , proprietary limited
+ p/l$, proprietary limited
+ pty. , proprietary
+ ltd. , limited
+ ltd.$, limited
+ pty , proprietary
+ pty$, proprietary
+(pty),proprietary
+ ltd , limited
+ ltd$, limited
+ c/o , care of
+ ass , association
+ ass$, association
+ ass. , association
+ co-op , cooperative
+ co-op$, cooperative
+ co-operative, cooperative
+ atf , as trustee for
+nsw ,new south wales

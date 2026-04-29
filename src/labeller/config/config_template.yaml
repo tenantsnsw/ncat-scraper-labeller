@@ -1,0 +1,41 @@
+# Path to the root data directory.
+# Leave blank to use the default: G:\Shared drives\Data\NCAT Scraper\
+base_data_dir: ""
+
+# Path to the NRSCH processed data directory.
+# Leave blank to use the default: G:\Shared drives\Data\NRSCH\
+nrsch_data_dir: ""
+
+# Boolean replacement mapping used when loading CSV data.
+# null is treated as pd.NA; .nan key matches np.nan.
+bool_replace_dict:
+  "False": false
+  "": null
+  "True": true
+  0: false
+  .nan: null
+  1: true
+  "1.0": true
+  "0.0": false
+
+# Slack: max characters for provider names in the classification report code block.
+# Names longer than this are truncated with "..." (e.g. "Argyle Community Hou...").
+slack_max_provider_chars: 30
+
+# Slack webhook URL for notifications (WARNING: SECRET)
+slack_webhook_url: ""
+
+# Slack bot token for file uploads (WARNING: SECRET)
+slack_bot_token: ""
+
+# Slack channel ID or name to post the log file to (e.g. "C01234567" or "#general")
+slack_channel: ""
+
+# Google service account credentials JSON file path (WARNING: SECRET)
+google_credentials_path: ""
+
+# Google Sheet IDs (WARNING: SECRET)
+google_sheet_id: ""
+gid_all: ""
+gid_month: ""
+gid_providers: ""

@@ -1,0 +1,36 @@
+# Default base_data_dir 'g:/Shared drives/Data/NCAT Scraper/'
+# If different, update the path below
+base_data_dir: ""
+
+# Default 'C:/Users/jack.m/Downloads/'
+# The downloads directory is used when running the scraper
+# to temporarily store the listings.csv file, before it's moved to the raw data directory.
+downloads_dir: ""
+
+api_query_format: "https://api.onlineregistry.justice.nsw.gov.au/courtlistsearch/listings?callback=JSON_CALLBACK&startDate={date}&endDate={date}&jurisdiction=NCAT&court=NCAT%20Consumer%20and%20Commercial%20Division%2CNCAT%20Appeal%20Panel&count=1000&offset=0&sortField=date,time,location&sortOrder=ASC&format=csv"
+
+
+# Base URL for captcha initiation page
+# Used in: constants.py (BASE_URL), scraper_methods.py (init_captcha)
+base_url: "https://onlineregistry.lawlink.nsw.gov.au/content/court-lists?#/"
+
+# Number of days in the past for which listings are available (used to calculate the earliest available date)
+# Used in: scrape_court_listings.py > calculate_days_till_unavailable, calculate_min_day_available
+days_available_backwards: 7
+
+# Number of days in the future for which listings are available (used to calculate the latest available date)
+# Used in: scrape_court_listings.py > calculate_days_till_available, calculate_max_day_available
+days_available_forwards: 21
+
+# Minimum number of days between scraper runs (used to determine when the next run should occur)
+# Used in: scrape_court_listings.py > calculate_next_run, run_now
+days_between_runs: 1
+
+# Slack webhook URL for notifications
+# Used in: post_slack_update.py
+# Starts with "https://hooks.slack.com/services/..."
+slack_webhook_url: ""
+
+slack_post_days:
+  - 0 # Monday
+  - 3 # Thursday

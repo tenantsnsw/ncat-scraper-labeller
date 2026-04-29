@@ -1,0 +1,13 @@
+# High level folders to ignore
+reports/*
+logs/*
+metadata/*
+
+# Whitelist src/ directory
+!src/**
+
+# Add files and folders to ignore in src/ here
+__pycache__/
+*.pyc
+config.yaml
+*.json
